@@ -69,9 +69,10 @@ Here is an example of what the response will look like:
 ---
 
 # Notes
-1. **Updating OpenAI Model:**
-    **In the agents.py file, you can specify which OpenAI model to use. Look for the section in the code where the model is configured and update it to your desired model, such as gpt-3.5-turbo, gpt-4, etc.
-    Ensure that your OpenAI API key and billing plan support the selected model.**
-2, **Optional Parameters:**
-    **The description field is optional. If provided, it helps the app validate the context of the questions.
-    The check_hallucination field is also optional. Use "yes" to enable hallucination checks.**
+- **`Updating OpenAI Model`:**
+    In the agents.py file, you can specify which OpenAI model to use. Look for the section in the code where the model is configured and update it to your desired model, such as gpt-3.5-turbo, gpt-4, etc.
+    Ensure that your OpenAI API key and billing plan support the selected model.
+
+- **`Optional Parameters`:**
+    The description field is optional. If provided, it helps the app validate the context of the questions.
+    The check_hallucination field is also optional. Use "yes" to enable hallucination checks.
