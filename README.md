@@ -26,7 +26,22 @@
     --form 'description="This PDF contains information about the Employee Handbook. It includes policies and information about the company."' \
     --form 'check_hallucination="yes"'
     ```
+# Using Docker to Run the Code
+**Follow these steps to build and run the app using Docker:**
+
+1. **Build the Docker Image**: Run the following command to build the Docker image:
+   ```bash
+   docker build -t pdf-processing-app .
+    ```
    
+2. **Run the Docker Container**: Start a container from the built image:
+   ```bash
+   docker run -p 8000:8000 pdf-processing-app
+   ```
+   
+3. **Access the App**: The app will be available at http://127.0.0.1:8000.
+
+
 Expected Response
 Here is an example of what the response will look like:
 ```bash
@@ -51,3 +66,13 @@ Here is an example of what the response will look like:
 
 - **`check_hallucination`**(Optional): check_hallucination: Enables checking for hallucinated responses. Use "yes" to enable this feature
     - Example: "yes" 
+
+---
+
+# Notes
+1. **Updating OpenAI Model:**
+    **In the agents.py file, you can specify which OpenAI model to use. Look for the section in the code where the model is configured and update it to your desired model, such as gpt-3.5-turbo, gpt-4, etc.
+    Ensure that your OpenAI API key and billing plan support the selected model.**
+2, **Optional Parameters:**
+    **The description field is optional. If provided, it helps the app validate the context of the questions.
+    The check_hallucination field is also optional. Use "yes" to enable hallucination checks.**
