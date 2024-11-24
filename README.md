@@ -26,6 +26,15 @@
     --form 'description="This PDF contains information about the Employee Handbook. It includes policies and information about the company."' \
     --form 'check_hallucination="yes"'
     ```
+   
+Expected Response
+Here is an example of what the response will look like:
+```bash
+{"What is the name of the company?":"The name of the company is Zania, Inc. The CEO mentioned in the closing statement is Shruti Gupta. The company's ethics code and mission statement are also provided in the document.",
+"Who is the CEO of the company?":"Shruti Gupta is the CEO of Zania, Inc.",
+"What is their vacation policy?":"Employees accrue vacation time based on the period worked, up to a maximum accrual amount. Vacation requests should be made in advance, and the company considers business needs when granting them. Unused vacation may be forfeited upon separation of employment unless state law dictates otherwise.","What is the termination policy?":"The termination policy outlines common-sense infractions that could lead to discipline, including immediate termination of employment. Management may provide verbal and written warnings before taking disciplinary actions, which can include demotion, transfer, forced leave, or termination. The specific terms of termination procedures are governed by state laws, and disciplinary actions may be taken without prior warning or procedure."}
+```
+
 ---
 
 #  Parameters
